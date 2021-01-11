@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Yekan.woff2") format("woff2"),
+    url("../fonts/Yekan.woff") format("woff"),
+    url("../fonts/Yekan.ttf") format("truetype");
+  /* Safari, Android, iOS */
+}
+
+body {
+  font-family: "Yekan";
+}
+
+.sidebar {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.9)),
+    url("../img/bg-sidebar.jpg") no-repeat center center/cover;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.side-link {
+  text-decoration: none;
+  transition: background-color 0.4s;
+  padding: 0.3rem 1rem;
+  border-radius: 7px;
+}
+
+.side-link:hover {
+  background: #444;
+}
+
+.side-link.active {
+  background: #c82333;
+  border-radius: 7px;
+}
+
+.side-link.active:hover {
+  background: #a50c1b;
+}
+
+.search-input {
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #444;
+  transition: all 0.5s;
+}
+
+.search-input:focus {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 2px solid #c82333;
+  outline: none;
+}
+
+@media (max-width: 765px) {
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+  .top-navbar {
+    position: static;
+  }
+}
+
+.icon-bullet::after {
+  content: "";
+  background: #c82333;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: -7px;
+  left: -7px;
+}
+
+.rightborder {
+  border-right: 4px solid #c82333 !important;
+}
